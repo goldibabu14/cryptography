@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class caesarCipher {
+public class substitutionCipher {
     public static String encrypt(String text , int shift){
         String enc = "";
         for(int i=0; i<text.length(); i++){

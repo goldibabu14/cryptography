@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class caesarCipher {
+public class hillCipher {
     public static String encrypt(String text , int[][] key){
         StringBuilder  ciphertext = new StringBuilder();
         for(int i=0; i<text.length(); i+=2){
