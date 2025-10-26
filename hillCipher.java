@@ -15,9 +15,9 @@ public class hillCipher {
         
     public static String decrypt(String text , int[][] key){
         StringBuilder  plaintext = new StringBuilder();
-        // Calculate inverse of key matrix
+        
         int det = key[0][0]*key[1][1] - key[0][1]*key[1][0];
-        det = (det%26 + 26)%26; // Ensure positive
+        det = (det%26 + 26)%26; 
         int detInv = -1;
         for(int i=0; i<26; i++){
             if((det*i)%26 == 1){
@@ -27,7 +27,7 @@ public class hillCipher {
         }
         if(detInv == -1){
             System.out.println("Key is not invertible, decryption not possible.");
-            return ""; // exit decryption
+            return ""; 
         }
         int[][] invKey = {
             {(key[1][1]*detInv)%26, (-key[0][1]*detInv + 26)%26},
