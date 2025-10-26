@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class substitutionCipher {
+
     public static String encrypt(String text , int shift){
         String enc = "";
         for(int i=0; i<text.length(); i++){
@@ -18,6 +19,7 @@ public class substitutionCipher {
         System.out.println("Encrypted message: " + enc);
         return enc;
     }
+
     public static void decrypt(String text , int shift){
         String dec = "";
         for(int i=0; i<text.length(); i++){
@@ -35,6 +37,7 @@ public class substitutionCipher {
         System.out.println("Decrypted message: " + dec);
         
     }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter message: ");
