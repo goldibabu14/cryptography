@@ -2,7 +2,7 @@ import java.security.*;
 import java.util.Base64;
 import javax.crypto.*;
 
-public class digitalSignature {
+public class rsa {
     public static void main(String[] args) throws Exception {
        String str = "hello";
        
