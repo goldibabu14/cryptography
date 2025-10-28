@@ -18,7 +18,7 @@ public class digitalSignature {
        byte[] digitalSignature = sign.sign();
 
        System.out.println("Sign = " +digitalSignature);
-       str= "hell";
+       //str= "hell";
        Signature verify = Signature.getInstance("SHA256withRSA");
        verify.initVerify(pu);
        verify.update(str.getBytes());
